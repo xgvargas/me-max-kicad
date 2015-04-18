@@ -62,7 +62,7 @@
     (pad_drill 0.6)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements FFFEFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -456,24 +456,24 @@
   (gr_line (start 149.4 45.8) (end 149.4 49.2) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 76.2 45.8) (end 149.4 45.8) (angle 90) (layer Edge.Cuts) (width 0.1))
 
-  (segment (start 107.6452 133.60908) (end 107.6452 133.8453) (width 0.25) (layer B.Cu) (net 1))
-  (segment (start 107.6452 133.8453) (end 105.20172 136.28878) (width 0.25) (layer B.Cu) (net 1))
-  (segment (start 107.6452 133.60908) (end 107.6452 133.87832) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 107.6452 133.87832) (end 104.95788 136.56564) (width 0.25) (layer F.Cu) (net 1) (tstamp 5531C017))
-  (segment (start 110.1852 133.60908) (end 110.1852 134.90702) (width 0.25) (layer F.Cu) (net 2))
-  (segment (start 110.1852 134.90702) (end 108.80598 136.28624) (width 0.25) (layer F.Cu) (net 2))
-  (segment (start 110.1852 133.60908) (end 110.1852 134.87654) (width 0.25) (layer B.Cu) (net 2))
+  (segment (start 107.6452 133.60908) (end 107.6452 133.87832) (width 0.25) (layer F.Cu) (net 1))
+  (segment (start 107.6452 133.8453) (end 105.20172 136.28878) (width 0.25) (layer B.Cu) (net 1))
+  (segment (start 107.6452 133.60908) (end 107.6452 133.8453) (width 0.25) (layer B.Cu) (net 1))
   (segment (start 110.1852 134.87654) (end 108.85932 136.20242) (width 0.25) (layer B.Cu) (net 2))
-  (segment (start 112.7252 133.60908) (end 112.7252 136.68248) (width 0.25) (layer F.Cu) (net 3))
+  (segment (start 110.1852 133.60908) (end 110.1852 134.87654) (width 0.25) (layer B.Cu) (net 2))
+  (segment (start 110.1852 134.90702) (end 108.80598 136.28624) (width 0.25) (layer F.Cu) (net 2))
+  (segment (start 110.1852 133.60908) (end 110.1852 134.90702) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 112.7252 133.60908) (end 112.7252 136.58088) (width 0.25) (layer B.Cu) (net 3))
-  (segment (start 115.2652 133.60908) (end 115.2652 134.88162) (width 0.25) (layer B.Cu) (net 4))
-  (segment (start 115.2652 134.88162) (end 116.64188 136.2583) (width 0.25) (layer B.Cu) (net 4))
-  (segment (start 115.2652 133.60908) (end 115.2652 134.89432) (width 0.25) (layer F.Cu) (net 4))
+  (segment (start 112.7252 133.60908) (end 112.7252 136.68248) (width 0.25) (layer F.Cu) (net 3))
   (segment (start 115.2652 134.89432) (end 116.70284 136.33196) (width 0.25) (layer F.Cu) (net 4))
-  (segment (start 117.8052 133.60908) (end 117.81282 133.60908) (width 0.25) (layer B.Cu) (net 5))
-  (segment (start 117.81282 133.60908) (end 120.58396 136.38022) (width 0.25) (layer B.Cu) (net 5))
-  (segment (start 117.8052 133.60908) (end 117.8052 133.61162) (width 0.25) (layer F.Cu) (net 5))
+  (segment (start 115.2652 133.60908) (end 115.2652 134.89432) (width 0.25) (layer F.Cu) (net 4))
+  (segment (start 115.2652 134.88162) (end 116.64188 136.2583) (width 0.25) (layer B.Cu) (net 4))
+  (segment (start 115.2652 133.60908) (end 115.2652 134.88162) (width 0.25) (layer B.Cu) (net 4))
   (segment (start 117.8052 133.61162) (end 120.60428 136.4107) (width 0.25) (layer F.Cu) (net 5))
+  (segment (start 117.8052 133.60908) (end 117.8052 133.61162) (width 0.25) (layer F.Cu) (net 5))
+  (segment (start 117.81282 133.60908) (end 120.58396 136.38022) (width 0.25) (layer B.Cu) (net 5))
+  (segment (start 117.8052 133.60908) (end 117.81282 133.60908) (width 0.25) (layer B.Cu) (net 5))
 
   (zone (net 3) (net_name /BUS3) (layer B.Cu) (tstamp 5531BA0E) (hatch edge 0.508)
     (connect_pads (clearance 0.4064))
@@ -672,6 +672,66 @@
     (filled_polygon
       (pts
         (xy 134.823 143.873) (xy 131.577 143.873) (xy 131.577 136.627) (xy 134.823 136.627) (xy 134.823 143.873)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer B.Mask) (tstamp 55326BED) (hatch full 0.508)
+    (connect_pads (clearance 0.4064))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 101.65 139.85) (xy 103.45 135.05) (xy 121.9 135.05) (xy 121.9 139.85)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 121.773 139.723) (xy 101.833261 139.723) (xy 103.538011 135.177) (xy 121.773 135.177) (xy 121.773 139.723)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 55326BED) (hatch full 0.508)
+    (connect_pads (clearance 0.4064))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 101.65 139.85) (xy 103.45 135.05) (xy 121.9 135.05) (xy 121.9 139.85)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 121.773 139.723) (xy 101.833261 139.723) (xy 103.538011 135.177) (xy 121.773 135.177) (xy 121.773 139.723)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 55326CD8) (hatch full 0.508)
+    (connect_pads (clearance 0.4064))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 131.35 136.4) (xy 135.05 136.4) (xy 135.05 145) (xy 131.35 145)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 134.923 144.873) (xy 131.477 144.873) (xy 131.477 136.527) (xy 134.923 136.527) (xy 134.923 144.873)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer B.Mask) (tstamp 55326CD8) (hatch full 0.508)
+    (connect_pads (clearance 0.4064))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 131.35 136.4) (xy 135.05 136.4) (xy 135.05 145) (xy 131.35 145)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 134.923 144.873) (xy 131.477 144.873) (xy 131.477 136.527) (xy 134.923 136.527) (xy 134.923 144.873)
       )
     )
   )

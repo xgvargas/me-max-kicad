@@ -3,42 +3,24 @@ LIBS:power
 LIBS:device
 LIBS:transistors
 LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
 LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+LIBS:MyBasic
+LIBS:MyConnector
+LIBS:MyInterface
+LIBS:MyMemory
+LIBS:MyModule
+LIBS:MyPower
+LIBS:MyProcessor
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Programable Switch Controler"
+Date "18 April 2015"
+Rev "1"
+Comp "Nha"
+Comment1 "Gustavo Vargas"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -52,7 +34,7 @@ F 1 "EE-MAX-A1" V 9900 1450 50  0000 C CNN
 F 2 "MyFootprints:MSTBO-LEFT" H 9800 1450 60  0001 C CNN
 F 3 "" H 9800 1450 60  0000 C CNN
 	1    9800 1450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X04 P3
@@ -63,7 +45,7 @@ F 1 "EE-MAX-A2" V 9900 2000 50  0000 C CNN
 F 2 "MyFootprints:MSTBO-LEFT" H 9800 2000 60  0001 C CNN
 F 3 "" H 9800 2000 60  0000 C CNN
 	1    9800 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X04 P5
@@ -74,7 +56,7 @@ F 1 "EE-MAX-A3" V 9900 2550 50  0000 C CNN
 F 2 "MyFootprints:MSTBO-LEFT" H 9800 2550 60  0001 C CNN
 F 3 "" H 9800 2550 60  0000 C CNN
 	1    9800 2550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X04 P2
@@ -85,7 +67,7 @@ F 1 "EE-MAX-B1" V 10600 1450 50  0000 C CNN
 F 2 "MyFootprints:MSTBO-RIGHT" H 10500 1450 60  0001 C CNN
 F 3 "" H 10500 1450 60  0000 C CNN
 	1    10500 1450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X04 P4
@@ -96,7 +78,7 @@ F 1 "EE-MAX-B2" V 10600 2000 50  0000 C CNN
 F 2 "MyFootprints:MSTBO-RIGHT" H 10500 2000 60  0001 C CNN
 F 3 "" H 10500 2000 60  0000 C CNN
 	1    10500 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X04 P6
@@ -107,7 +89,7 @@ F 1 "EE-MAX-B3" V 10600 2550 50  0000 C CNN
 F 2 "MyFootprints:MSTBO-RIGHT" H 10500 2550 60  0001 C CNN
 F 3 "" H 10500 2550 60  0000 C CNN
 	1    10500 2550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X05 P7
@@ -118,7 +100,7 @@ F 1 "EE-MAX-BUS" V 10600 3150 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 10500 3150 60  0001 C CNN
 F 3 "" H 10500 3150 60  0000 C CNN
 	1    10500 3150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10300 2950 10000 2950
@@ -142,4 +124,15 @@ Text Label 10000 3350 0    60   ~ 0
 BUS5
 Text Notes 8850 3700 0    60   ~ 0
 Try to keep bus signals names as is.\nOtherwise you will have to re-assignate the net\nname to the zones that creates the bus contacts.
+$Comp
+L LPC1766 U?
+U 1 1 5531D30A
+P 3150 3800
+F 0 "U?" H 4250 6550 60  0000 C CNN
+F 1 "LPC1766" H 4250 1100 60  0001 C CNN
+F 2 "" H 3000 4900 60  0000 C CNN
+F 3 "" H 3000 4900 60  0000 C CNN
+	1    3150 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
