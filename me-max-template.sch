@@ -1,16 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:opto
-LIBS:MyBasic
-LIBS:MyConnector
-LIBS:MyInterface
-LIBS:MyMemory
-LIBS:MyModule
-LIBS:MyPower
-LIBS:MyProcessor
+LIBS:me-max-template-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -124,15 +113,4 @@ Text Label 10000 3350 0    60   ~ 0
 BUS5
 Text Notes 8850 3700 0    60   ~ 0
 Try to keep bus signals names as is.\nOtherwise you will have to re-assignate the net\nname to the zones that creates the bus contacts.
-$Comp
-L LPC1766 U?
-U 1 1 5531D30A
-P 3150 3800
-F 0 "U?" H 4250 6550 60  0000 C CNN
-F 1 "LPC1766" H 4250 1100 60  0001 C CNN
-F 2 "" H 3000 4900 60  0000 C CNN
-F 3 "" H 3000 4900 60  0000 C CNN
-	1    3150 3800
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

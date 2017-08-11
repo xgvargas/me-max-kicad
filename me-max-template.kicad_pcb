@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew "(after 2015-mar-04 BZR unknown)-product")
+(kicad_pcb (version 4) (host pcbnew 4.0.7-e1-6374~58~ubuntu16.04.1)
 
   (general
     (links 0)
@@ -16,24 +16,16 @@
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
-    (32 B.Adhes user)
-    (33 F.Adhes user)
-    (34 B.Paste user)
-    (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
-    (38 B.Mask user)
-    (39 F.Mask user)
+    (38 B.Mask user hide)
+    (39 F.Mask user hide)
     (40 Dwgs.User user)
     (41 Cmts.User user)
-    (42 Eco1.User user)
-    (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
   )
 
   (setup
@@ -62,7 +54,7 @@
     (pad_drill 0.6)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFEFFFF)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -408,7 +400,7 @@
       (net 29 "Net-(P6-Pad1)"))
   )
 
-  (gr_line (start 113.2 144.65) (end 113.2 140.95) (angle 90) (layer B.Fab) (width 0.2))
+  (gr_line (start 113.2 144.65) (end 113.2 140.95) (angle 90) (layer Dwgs.User) (width 0.2))
   (gr_line (start 122.75 139.4) (end 122.75 139.7) (angle 90) (layer F.SilkS) (width 0.2))
   (gr_line (start 102.45 139.4) (end 102.45 139.7) (angle 90) (layer F.SilkS) (width 0.2))
   (gr_line (start 121.95 135) (end 121.95 139.4) (angle 90) (layer F.SilkS) (width 0.2))
